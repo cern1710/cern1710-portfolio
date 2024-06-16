@@ -14,7 +14,6 @@ const NotFound = () => (
         <Heading as="h1" align="center">
             404
         </Heading>
-        <Divider my={1} />
         <Text align="center">
             Oops! We can&apos;t find what you are looking for.
         </Text>
