@@ -83,8 +83,8 @@ const NavBar = props => {
                 <LinkItem href="/volunteering" path={path}>
                     Volunteering
                 </LinkItem>
-                <LinkItem href="https://letterboxd.com/cern1710" path={path}>
-                    Letterboxd
+                <LinkItem href="https://github.com/cern1710" path={path}>
+                    GitHub
                 </LinkItem>
             </Stack>
 
@@ -110,9 +110,9 @@ const NavBar = props => {
                             </MenuItem>
                             <MenuItem
                                 as={Link}
-                                href="https://letterboxd.com/cern1710/"
+                                href="https://github.com/cern1710"
                             >
-                                Letterboxd
+                                GitHub
                             </MenuItem>
                         </MenuList>
                     </Menu>

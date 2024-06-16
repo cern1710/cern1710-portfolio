@@ -30,7 +30,7 @@ const Page = () => (
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
-                        Samuel Wu
+                        Samuel Wu <span style={{ fontWeight: 'normal', fontSize: '0.8em' }}>(he/they)</span>
                     </Heading>
                     <div> HPC | Machine Learning | Public Speaker | Avid film buff</div>
                 </Box>
