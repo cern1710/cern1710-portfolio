@@ -30,6 +30,7 @@ const LinkItem = ({ href, path,target, children, ...props }) => {
             bg={active ? 'glassTeal' : undefined}
             color={active ? "#202023" : inactiveColor}
             target={target}
+            borderRadius="14px"
             {...props}
         >
             {children}
@@ -48,7 +49,7 @@ const NavBar = props => {
             position="fixed"
             as="nav"
             w="100%"
-            bg={useColorModeValue('#ffffff40', "#20202380")}
+            bg={useColorModeValue('#ffffff40', "#20202390")}
             style={{ backdropFilter: 'blur(10px)' }}
             zIndex={2}
             {...props}
@@ -76,17 +77,20 @@ const NavBar = props => {
                 flexGrow={1}
                 mt={{base: 4, nmd: 0}}
             >
-                <LinkItem href="/works" path={path}>
-                    Works
+                <LinkItem href="/projects" path={path}>
+                    Projects
                 </LinkItem>
-                <LinkItem href="/posts" path={path}>
-                    Posts
+                <LinkItem href="/volunteering" path={path}>
+                    Volunteering
+                </LinkItem>
+                <LinkItem href="https://letterboxd.com/cern1710" path={path}>
+                    Letterboxd
                 </LinkItem>
             </Stack>
 
             <Box flex={1} align="right">
                 <ToggleButton />
-                <Box ml={2} display={{base: 'inline-block'}}>
+                <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                     <Menu isLazy id="navbar-menu">
                         <MenuButton
                             as={IconButton}
@@ -98,8 +102,11 @@ const NavBar = props => {
                             <MenuItem as={MenuLink} href="/">
                                 About
                             </MenuItem>
-                            <MenuItem as={MenuLink} href="/works">
+                            <MenuItem as={MenuLink} href="/projects">
                                 Projects
+                            </MenuItem>
+                            <MenuItem as={MenuLink} href="/volunteering">
+                                Volunteering
                             </MenuItem>
                             <MenuItem
                                 as={Link}

@@ -29,11 +29,11 @@ const Logo = () => {
         <NavIcon />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily='M PLUS Rounded 1c", sans-serif'
-          fontWeight="bold"
+          fontFamily='"M PLUS Rounded 1c", sans-serif'
+          fontWeight="510"
           ml={3}
         >
-            Samuel Wu
+          Sam / Samuel
         </Text>
       </LogoBox>
 
