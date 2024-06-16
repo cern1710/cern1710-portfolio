@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import { ProjectGridItem } from '../components/griditem'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
@@ -10,13 +10,22 @@ const Volunteering = () => (
                 Volunteering work
             </Heading>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
                     <ProjectGridItem
-                        id="advection"
-                        title="Under construction"
+                        category="volunteering"
+                        id="llm_attacks"
+                        title="Adversarial Attacks on Aligned Large Language Models"
                     >
-                        Under construction
+                        Understanding AI alignment and how aligned Large Language Models can be attacked
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
+                        id="rl"
+                        title="Mario Learns Reinforcement Learning"
+                    >
+                        An Introduction to RL given at LU CompSoc
                     </ProjectGridItem>
                 </Section>
             </SimpleGrid>

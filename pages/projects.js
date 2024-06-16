@@ -10,13 +10,13 @@ const Projects = () => (
                 Projects
             </Heading>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
                     <ProjectGridItem
                         id="advection"
                         title="Advection solver"
                     >
-                        Parallel project
+                        2D advection solver using MPI, OpenMP and CUDA written in C
                     </ProjectGridItem>
                 </Section>
             </SimpleGrid>
