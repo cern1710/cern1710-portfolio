@@ -86,7 +86,7 @@ const NavBar = props => {
 
             <Box flex={1} align="right">
                 <ToggleButton />
-                <Box ml={2} display={{base: 'inline-block', md:'none'}}>
+                <Box ml={2} display={{base: 'inline-block'}}>
                     <Menu isLazy id="navbar-menu">
                         <MenuButton
                             as={IconButton}
