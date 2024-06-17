@@ -9,7 +9,7 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Samuel's portfolio website - Welcome!" />
                 <meta name="author" content="Samuel Wu" />
-                <link rel="shortcut icon" href="https://cern1710.com/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.ico" sizes="any" />
                 <title>Samuel Wu</title>
             </Head>
 
