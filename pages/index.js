@@ -22,7 +22,7 @@ const Page = () => (
                 bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
                 p={3}
                 mb={6}
-                align="center"
+                textAlign="center"
                 css={{ backdropFilter: 'blur(10px)', fontStyle: 'italic' }}
             >
                 My God! What have I done?
@@ -69,7 +69,7 @@ const Page = () => (
                 <Paragraph>
                     I am a final year student at Lancaster University,
                     UK, in the School of Computing and Communications.
-                    My undergraduate dissertation is on symbol-level
+                    My undergraduate dissertation is on accelerating symbol-level
                     GRAND, supervised by Ioannis Chatzigeorgiou.
                     I also did a full exchange year at the Australian
                     National University.
@@ -86,9 +86,9 @@ const Page = () => (
                     and <Link href="https://letterboxd.com/cern1710">
                         watching films</Link>. I am also actively involved
                     in Lancaster University's Computer Science society,
-                    giving talks on <Link as={NextLink}
+                    having given talks on <Link as={NextLink}
                         href="/volunteering/rl" passHref scroll={false}>
-                        Reinforcement Learning</Link> and
+                        reinforcement learning</Link> and
                     <Link as={NextLink}
                         href="/volunteering/llm_attacks"
                         passHref
@@ -108,14 +108,30 @@ const Page = () => (
                     </Button>
                 </Box>
             </Section>
+
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    Bio
+                    Education
                 </Heading>
                 <BioSection>
-                    <BioYear>Oct 2021 - Present</BioYear>
-                    Pursuing a bachelor&apos;s degree at Lancaster University
+                    <BioYear>Starting: Sep 2024</BioYear>
+                    MSc in High Performance Computing with Data Science
+                    at the University of Edinburgh
                 </BioSection>
+                <BioSection>
+                    <BioYear>Oct 2021 - Present</BioYear>
+                    BSc in Computer Science at Lancaster University
+                </BioSection>
+                <BioSection>
+                    <BioYear>Jul 2022 - Jun 2023</BioYear>
+                    Year abroad at the Australian National University
+                </BioSection>
+            </Section>
+
+            <Section delay={0.5}>
+                <Heading as="h3" variant="section-title">
+                    Experience
+                </Heading>
                 <BioSection>
                     <BioYear>Oct 2023 - Mar 2024</BioYear>
                     Teaching assistant in OS and Computer Networks
@@ -123,10 +139,6 @@ const Page = () => (
                 <BioSection>
                     <BioYear>Oct 2023 - Dec 2023</BioYear>
                     Back-end developer at ISS
-                </BioSection>
-                <BioSection>
-                    <BioYear>Jul 2022 - Jun 2023</BioYear>
-                    Year abroad at the Australian National University
                 </BioSection>
             </Section>
         </Container>
