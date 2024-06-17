@@ -30,7 +30,8 @@ const LinkItem = ({ href, path,target, children, ...props }) => {
             bg={active ? 'glassTeal' : undefined}
             color={active ? "#202023" : inactiveColor}
             target={target}
-            borderRadius="14px"
+            // borderRadius="14px"
+            borderRadius="full" py={2} px={5}
             {...props}
         >
             {children}
@@ -58,7 +59,7 @@ const NavBar = props => {
         <Container
             display="flex"
             p={2}
-            maxW="container.md"
+            maxW={{ base: "100%", sm: "600px", md: "700px", lg: "900px", xl: "1200px" }}
             wrap="wrap"
             align="center"
             justify="space-between"
@@ -82,6 +83,9 @@ const NavBar = props => {
                 </LinkItem>
                 <LinkItem href="/volunteering" path={path}>
                     Volunteering
+                </LinkItem>
+                <LinkItem href="/cv.pdf" path={path}>
+                    CV
                 </LinkItem>
                 <LinkItem href="https://github.com/cern1710" path={path}>
                     GitHub
@@ -107,6 +111,9 @@ const NavBar = props => {
                             </MenuItem>
                             <MenuItem as={MenuLink} href="/volunteering">
                                 Volunteering
+                            </MenuItem>
+                            <MenuItem href="/cv.pdf" path={path} target="_blank">
+                                CV
                             </MenuItem>
                             <MenuItem
                                 as={Link}

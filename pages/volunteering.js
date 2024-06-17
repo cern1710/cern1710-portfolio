@@ -17,7 +17,7 @@ const Volunteering = () => (
                         id="llm_attacks"
                         title="Adversarial Attacks on Aligned Large Language Models"
                     >
-                        Understanding AI alignment and how aligned Large Language Models can be attacked
+                        Understanding AI alignment and how aligned Large Language Models can be attacked, given at LUHack
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
@@ -26,6 +26,14 @@ const Volunteering = () => (
                         title="Mario Learns Reinforcement Learning"
                     >
                         An Introduction to RL given at LU CompSoc
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
+                        id="intro-parallel"
+                        title="An Introduction to Parallelism"
+                    >
+                        Introducing the concepts of parallel computing at BSides Leeds
                     </ProjectGridItem>
                 </Section>
             </SimpleGrid>

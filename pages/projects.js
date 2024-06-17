@@ -6,10 +6,9 @@ import Layout from '../components/layouts/article'
 const Projects = () => (
     <Layout title="Projects">
         <Container>
-            <Heading as="h3" fontSize={30} mb={4}>
+            <Heading as="h3" fontSize={30} mb={4} >
                 Projects
             </Heading>
-
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
                     <ProjectGridItem
