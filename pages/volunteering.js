@@ -7,7 +7,7 @@ const Volunteering = () => (
     <Layout title="Volunteering">
         <Container>
             <Heading as="h3" fontSize={30} mb={4}>
-                Volunteering work
+                Volunteering Experience
             </Heading>
 
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
