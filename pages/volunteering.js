@@ -41,6 +41,15 @@ const Volunteering = () => (
                     <Divider my={4} />
                     <ProjectGridItem
                         category="volunteering"
+                        id="course_rep"
+                        title="Course Representative"
+                        date="(Feb-Jul 2023)"
+                    >
+                        Acted as a liason for classmates, communicating their feedback to convenors
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
                         id="newpipe"
                         title="Feature Contribution to NewPipe"
                         date="(Nov 2022)"

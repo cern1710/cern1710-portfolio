@@ -11,6 +11,7 @@ import Image from 'next/image'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 import NextLink from 'next/link'
 
 const Page = () => (
@@ -73,25 +74,25 @@ const Page = () => (
                     I also did a full exchange year at the Australian
                     National University.
                 </Paragraph>
-                <br/>
+                <br />
                 <Paragraph>
                     I am interested in high-performance computing (HPC)
                     in general and, in particular, leveraging HPC in
                     machine learning applications.
                 </Paragraph>
-                <br/>
+                <br />
                 <Paragraph>
                     Outside of my academic pursuits, I enjoy reading
                     and <Link href="https://letterboxd.com/cern1710">
-                    watching films</Link>. I am also actively involved
+                        watching films</Link>. I am also actively involved
                     in Lancaster University's Computer Science society,
                     giving talks on <Link as={NextLink}
-                    href="/volunteering/rl" passHref scroll={false}>
-                    Reinforcement Learning</Link> and
+                        href="/volunteering/rl" passHref scroll={false}>
+                        Reinforcement Learning</Link> and
                     <Link as={NextLink}
-                    href="/volunteering/llm_attacks"
-                    passHref
-                    scroll={false}> adversarial attacks on LLMs</Link>.
+                        href="/volunteering/llm_attacks"
+                        passHref
+                        scroll={false}> adversarial attacks on LLMs</Link>.
                 </Paragraph>
 
                 <Box align="center" my={6}>
@@ -106,6 +107,27 @@ const Page = () => (
                         My portfolio
                     </Button>
                 </Box>
+            </Section>
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>Oct 2021 - Present</BioYear>
+                    Pursuing a bachelor&apos;s degree at Lancaster University
+                </BioSection>
+                <BioSection>
+                    <BioYear>Oct 2023 - Mar 2024</BioYear>
+                    Teaching assistant in OS and Computer Networks
+                </BioSection>
+                <BioSection>
+                    <BioYear>Oct 2023 - Dec 2023</BioYear>
+                    Back-end developer at ISS
+                </BioSection>
+                <BioSection>
+                    <BioYear>Jul 2022 - Jun 2023</BioYear>
+                    Year abroad at the Australian National University
+                </BioSection>
             </Section>
         </Container>
     </Layout>

@@ -44,6 +44,14 @@ const Projects = () => (
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
+                        id="mapreduce"
+                        title="Parallel MapReduce"
+                        date="(Jul-Sep 2023)"
+                    >
+                        pthreads-based MapReduce application for big data processing
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="mojo"
                         title="Mojo Compiler"
                         date="(Feb-May 2023)"
@@ -53,10 +61,10 @@ const Projects = () => (
                     <Divider my={4} />
                     <ProjectGridItem
                         id="advection"
-                        title="Parallel 9-Point Stencil Solver"
+                        title="Nine-Point Stencil Solver"
                         date="(Mar-May 2023)"
                     >
-                        2D advection solver using MPI, OpenMP and CUDA; written in C
+                        Parallelised 2D advection solver using MPI, OpenMP and CUDA; written in C
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
