@@ -12,15 +12,23 @@ const Projects = () => (
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
                     <ProjectGridItem
+                        id="fda_surfaces"
+                        title="FDASurfaces.jl"
+                        date="(Aug 2023 - Present)"
+                    >
+                        Core contributor of a CUDA-powered Julia package, used for functional data analysis on smooth manifolds
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="sdn"
                         title="SDN Controller"
                         date="(Feb-Mar 2024)"
                     >
-                        Ryu-based OpenFlow static routing controller with firewalling
+                        Ryu-based OpenFlow routing controller with firewalling and pre-installed flow mods
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
-                        id="genetic"
+                        id="ga"
                         title="Path Planning for Autonomous Robots"
                         date="(Nov-Dec 2023)"
                     >
@@ -28,11 +36,27 @@ const Projects = () => (
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
+                        id="raycaster"
+                        title="micro:bit Raycaster"
+                        date="(Dec 2023)"
+                    >
+                        Textured raycaster on the NRF52833 SoC supporting collision detection and sprites
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        id="mojo"
+                        title="Mojo Compiler"
+                        date="(Feb-May 2023)"
+                    >
+                        Fully functioning compiler for an object-oriented language; written in Java
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="advection"
                         title="Parallel 9-Point Stencil Solver"
-                        date="(Mar-Jun 2023)"
+                        date="(Mar-May 2023)"
                     >
-                        2D advection solver using MPI, OpenMP and CUDA written in C
+                        2D advection solver using MPI, OpenMP and CUDA; written in C
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem

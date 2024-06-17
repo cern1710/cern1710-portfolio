@@ -16,6 +16,7 @@ import {
     useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import ToggleButton from './toggle.js'
 
 const LinkItem = ({ href, path,target, children, ...props }) => {
@@ -88,7 +89,10 @@ const NavBar = props => {
                     CV
                 </LinkItem>
                 <LinkItem href="https://github.com/cern1710" path={path}>
-                    GitHub
+                    <Box as={FaGithub} size="20px" />
+                </LinkItem>
+                <LinkItem href="https://www.linkedin.com/in/wcl-samuel/" path={path}>
+                    <Box as={FaLinkedin} size="20px" />
                 </LinkItem>
             </Stack>
 
@@ -120,6 +124,12 @@ const NavBar = props => {
                                 href="https://github.com/cern1710"
                             >
                                 GitHub
+                            </MenuItem>
+                            <MenuItem
+                                as={Link}
+                                href="https://www.linkedin.com/in/wcl-samuel/"
+                            >
+                                LinkedIn
                             </MenuItem>
                         </MenuList>
                     </Menu>

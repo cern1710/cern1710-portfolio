@@ -14,9 +14,9 @@ const Volunteering = () => (
                 <Section>
                     <ProjectGridItem
                         category="volunteering"
-                        id="intro-parallel"
+                        id="intro_parallel"
                         title="An Introduction to Parallelism"
-                        date="(Jun, 2024)"
+                        date="(Jun 2024)"
                     >
                         Introducing the concepts of parallel computing, given at BSides Leeds
                     </ProjectGridItem>
@@ -25,7 +25,7 @@ const Volunteering = () => (
                         category="volunteering"
                         id="llm_attacks"
                         title="Adversarial Attacks on Aligned LLMs"
-                        date="(Mar, 2024)"
+                        date="(Mar 2024)"
                     >
                         Understanding how aligned Large Language Models can be attacked, given at LUHack
                     </ProjectGridItem>
@@ -34,9 +34,18 @@ const Volunteering = () => (
                         category="volunteering"
                         id="rl"
                         title="Mario Learns Reinforcement Learning"
-                        date="(Feb, 2024)"
+                        date="(Feb 2024)"
                     >
                         An Introduction to RL given at LU CompSoc
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
+                        id="newpipe"
+                        title="Feature Contribution to NewPipe"
+                        date="(Nov 2022)"
+                    >
+                        Introduced two special toggles for accessibility, written in Kotlin
                     </ProjectGridItem>
                 </Section>
             </SimpleGrid>
