@@ -14,26 +14,29 @@ const Volunteering = () => (
                 <Section>
                     <ProjectGridItem
                         category="volunteering"
-                        id="llm_attacks"
-                        title="Adversarial Attacks on Aligned Large Language Models"
+                        id="intro-parallel"
+                        title="An Introduction to Parallelism"
+                        date="(Jun, 2024)"
                     >
-                        Understanding AI alignment and how aligned Large Language Models can be attacked, given at LUHack
+                        Introducing the concepts of parallel computing, given at BSides Leeds
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
+                        id="llm_attacks"
+                        title="Adversarial Attacks on Aligned LLMs"
+                        date="(Mar, 2024)"
+                    >
+                        Understanding how aligned Large Language Models can be attacked, given at LUHack
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
                         category="volunteering"
                         id="rl"
                         title="Mario Learns Reinforcement Learning"
+                        date="(Feb, 2024)"
                     >
                         An Introduction to RL given at LU CompSoc
-                    </ProjectGridItem>
-                    <Divider my={4} />
-                    <ProjectGridItem
-                        category="volunteering"
-                        id="intro-parallel"
-                        title="An Introduction to Parallelism"
-                    >
-                        Introducing the concepts of parallel computing at BSides Leeds
                     </ProjectGridItem>
                 </Section>
             </SimpleGrid>
