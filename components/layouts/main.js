@@ -7,9 +7,9 @@ const Main = ({children, router}) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Samuel's portfolio website" />
+                <meta name="description" content="Samuel's portfolio website - Welcome!" />
                 <meta name="author" content="Samuel Wu" />
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="http://cern1710.com/favicon.ico" type="image/x-icon" />
                 <title>Samuel Wu</title>
             </Head>
 
