@@ -2,9 +2,11 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import { ProjectGridItem } from '../components/griditem'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
+import BubsyLoader from '../components/loader'
 
 const Volunteering = () => (
     <Layout title="Volunteering">
+        <BubsyLoader />
         <Container>
             <Heading as="h3" fontSize={30} mb={4}>
                 Volunteering Experience
