@@ -9,13 +9,23 @@ const VoxelBubsy = () => {
 	const refContainer = useRef()
 	const [loading, setLoading] = useState(true)
 	const refRenderer = useRef()
+	const refCamera = useRef()
 
 	const handleWindowResize = useCallback(() => {
 		const { current: renderer } = refRenderer
 		const { current: container } = refContainer
+		const { current: camera } = refCamera
 		if (container && renderer) {
-			renderer.setSize(container.clientWidth,
-							  container.clientHeight)
+			const width = container.clientWidth
+			const height = container.clientHeight
+			renderer.setSize(width, height)
+
+			const scale = height * 0.04
+			camera.left = -scale
+			camera.right = scale
+			camera.top = scale
+			camera.bottom = -scale
+			camera.updateProjectionMatrix()
 		}
 	}, [])
 
