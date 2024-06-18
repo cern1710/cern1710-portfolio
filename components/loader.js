@@ -10,7 +10,7 @@ export const BubsyContainer = forwardRef(({ children }, ref) => (
 		display="flex"
 		alignItems="center"
 		justifyContent="center"
-		mt={['-20px', '-60px', '-180px']}
+		mt={['10px', '-60px', '-180px']}
 		mb={['-40px', '-140px', '-210px']}
 		w={[280, 480, 640]}
 		h={[280, 480, 640]}
