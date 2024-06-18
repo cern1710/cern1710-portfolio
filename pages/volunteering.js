@@ -9,7 +9,7 @@ const Volunteering = () => (
         <BubsyLoader />
         <Container>
             <Heading as="h3" fontSize={30} mb={4}>
-                Volunteering Experience
+                Volunteer Experience
             </Heading>
 
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
