@@ -120,7 +120,7 @@ const Page = () => (
                 </BioSection>
                 <BioSection>
                     <BioYear>Oct 2021 - Present</BioYear>
-                    BSc in Computer Science at Lancaster University
+                    BSc Hons in Computer Science at Lancaster University
                 </BioSection>
                 <BioSection>
                     <BioYear>Jul 2022 - Jun 2023</BioYear>
