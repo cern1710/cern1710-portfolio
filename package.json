@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Sam/Samuel Wu",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
