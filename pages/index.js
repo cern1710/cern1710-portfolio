@@ -17,7 +17,7 @@ import NextLink from 'next/link'
 const Page = () => (
     <Layout>
         <Container>
-            <Box
+            {/* <Box
                 borderRadius="lg"
                 bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
                 p={3}
@@ -26,7 +26,7 @@ const Page = () => (
                 css={{ backdropFilter: 'blur(10px)', fontStyle: 'italic' }}
             >
                 My God! What have I done?
-            </Box>
+            </Box> */}
 
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
