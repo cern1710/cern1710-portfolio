@@ -44,7 +44,7 @@ const VoxelBubsy = () => {
 			const scene = new THREE.Scene()
 			scene.add(new THREE.AmbientLight(0xcccccc, Math.PI))
 
-			const target = new THREE.Vector3(-0.5, 0, 0)
+			const target = new THREE.Vector3(-0.5, 6, 0)
 			const initialCameraPosition = new THREE.Vector3(
 				20 * Math.sin(0.2 * Math.PI),
 				10,
