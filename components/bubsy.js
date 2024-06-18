@@ -15,7 +15,7 @@ const VoxelBubsy = () => {
 		const { current: renderer } = refRenderer
 		const { current: container } = refContainer
 		const { current: camera } = refCamera
-		if (container && renderer) {
+		if (container && renderer && camera) {
 			const width = container.clientWidth
 			const height = container.clientHeight
 			renderer.setSize(width, height)
@@ -44,14 +44,14 @@ const VoxelBubsy = () => {
 			const scene = new THREE.Scene()
 			scene.add(new THREE.AmbientLight(0xcccccc, Math.PI))
 
-			const target = new THREE.Vector3(-0.5, 3, 0)
+			const target = new THREE.Vector3(-0.5, 2.5, 0)
 			const initialCameraPosition = new THREE.Vector3(
 				20 * Math.sin(0.2 * Math.PI),
 				10,
 				20 * Math.cos(0.2 * Math.PI)
 			)
 
-			const scale = scH * 0.04
+			const scale = scH * 0.05
 			const camera = new THREE.OrthographicCamera(
 				-scale, scale, scale,
 				-scale, 0.01, 50000
@@ -80,6 +80,7 @@ const VoxelBubsy = () => {
 				cancelAnimationFrame(req)
 				renderer.domElement.remove()
 				renderer.dispose()
+				controls.dispose()
 			}
 		}
 	}, [])
