@@ -20,7 +20,7 @@ const Volunteering = () => (
                         title="Why Not Both? Bringing HPC and Kubernetes Together"
                         date="(Jun 2024)"
                     >
-                        Lightning talk on enabling HPC and AI workloads in Kubernetes, given at Yorkshire DevOps
+                        Lightning talk on HPC and AI workloads in Kubernetes, given at Yorkshire DevOps
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
