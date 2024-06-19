@@ -16,6 +16,15 @@ const Volunteering = () => (
                 <Section>
                     <ProjectGridItem
                         category="volunteering"
+                        id="hpc_kube"
+                        title="Why Not Both? Bringing HPC and Kubernetes Together"
+                        date="(Jun 2024)"
+                    >
+                        Lightning talk on enabling HPC and AI workloads in Kubernetes, given at Yorkshire DevOps
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
                         id="intro_parallel"
                         title="An Introduction to Parallelism"
                         date="(Jun 2024)"
