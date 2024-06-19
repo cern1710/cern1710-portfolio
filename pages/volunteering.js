@@ -43,7 +43,7 @@ const Volunteering = () => (
                     <Divider my={4} />
                     <ProjectGridItem
                         category="volunteering"
-                        id="rl"
+                        id="mario_rl"
                         title="Mario Learns Reinforcement Learning"
                         date="(Feb 2024)"
                     >
@@ -52,7 +52,7 @@ const Volunteering = () => (
                     <Divider my={4} />
                     <ProjectGridItem
                         category="volunteering"
-                        id="course_rep"
+                        id="anu_course_rep"
                         title="Course Representative"
                         date="(Feb-Jul 2023)"
                     >

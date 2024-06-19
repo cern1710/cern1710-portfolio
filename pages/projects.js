@@ -28,7 +28,7 @@ const Projects = () => (
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
-                        id="ga"
+                        id="genetic_algorithm"
                         title="Path Planning for Autonomous Robots"
                         date="(Nov-Dec 2023)"
                     >
@@ -54,7 +54,7 @@ const Projects = () => (
                     <ProjectGridItem
                         id="mojo"
                         title="Mojo Compiler"
-                        date="(Feb-May 2023)"
+                        date="(Feb-Jun 2023)"
                     >
                         Fully functioning compiler for an object-oriented language; written in Java
                     </ProjectGridItem>

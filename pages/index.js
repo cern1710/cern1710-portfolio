@@ -85,14 +85,14 @@ const Page = () => (
                     Outside of my academic pursuits, I enjoy reading
                     and <Link href="https://letterboxd.com/cern1710">
                         watching films</Link>. I am also actively involved
-                    in Lancaster University's Computer Science society,
-                    having given talks on <Link as={NextLink}
-                        href="/volunteering/rl" passHref scroll={false}>
-                        reinforcement learning</Link> and
+                    in the community, having recently given talks at
+                    <Link as={NextLink} href="/volunteering/hpc_kube"
+                    passHref scroll={false}> Yorkshire DevOps
+                        </Link> and
                     <Link as={NextLink}
-                        href="/volunteering/llm_attacks"
+                        href="/volunteering/intro_parallel"
                         passHref
-                        scroll={false}> adversarial attacks on LLMs</Link>.
+                        scroll={false}> BSides Leeds</Link>.
                 </Paragraph>
 
                 <Box align="center" my={6}>
