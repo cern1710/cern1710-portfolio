@@ -67,6 +67,15 @@ const Volunteering = () => (
                     >
                         Introduced two special toggles for accessibility, written in Kotlin
                     </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
+                        category="volunteering"
+                        id="scan_editor"
+                        title="Deputy Editor at SCAN"
+                        date="(Jan-Jun 2022)"
+                    >
+                        Responsible for editing film articles in Lancaster University's student newspaper
+                    </ProjectGridItem>
                 </Section>
             </SimpleGrid>
         </Container>
