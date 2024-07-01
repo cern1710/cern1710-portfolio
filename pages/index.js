@@ -114,12 +114,12 @@ const Page = () => (
                     Education
                 </Heading>
                 <BioSection>
-                    <BioYear>Starting: Sep 2024</BioYear>
+                    <BioYear>Sep 2024 - Aug 2025</BioYear>
                     MSc in High Performance Computing with Data Science
                     at the University of Edinburgh
                 </BioSection>
                 <BioSection>
-                    <BioYear>Oct 2021 - Present</BioYear>
+                    <BioYear>Oct 2021 - Jul 2024</BioYear>
                     BSc Hons in Computer Science at Lancaster University
                 </BioSection>
                 <BioSection>
