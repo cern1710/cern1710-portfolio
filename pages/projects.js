@@ -11,10 +11,18 @@ const Projects = () => (
             </Heading>
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
+                <ProjectGridItem
+                        id="transformers"
+                        title="Transformers From Scratch"
+                        date="Aug 2024"
+                    >
+                        Built the Transformer architecture from scratch, and extended it to the Vision Transformer (ViT) model
+                    </ProjectGridItem>
+                    <Divider my={4} />
                     <ProjectGridItem
                         id="fda_surfaces"
                         title="FDASurfaces.jl"
-                        date="(Aug 2023 - Present)"
+                        date="(Aug 2023 - Jul 2024)"
                     >
                         Core contributor of a CUDA-powered Julia package, used for functional data analysis on smooth manifolds
                     </ProjectGridItem>
