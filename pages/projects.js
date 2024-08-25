@@ -14,7 +14,7 @@ const Projects = () => (
                 <ProjectGridItem
                         id="transformers"
                         title="Transformers From Scratch"
-                        date="Aug 2024"
+                        date="(Aug 2024)"
                     >
                         Built the Transformer architecture from scratch, and extended it to the Vision Transformer (ViT) model
                     </ProjectGridItem>
