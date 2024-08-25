@@ -11,7 +11,15 @@ const Projects = () => (
             </Heading>
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
-                <ProjectGridItem
+                    <ProjectGridItem
+                        id="inland_empire"
+                        title="Inland Empire"
+                        date="(Aug 2024 - Now)"
+                    >
+                        Movie recommendation system based on Letterboxd user data
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="transformers"
                         title="Transformers From Scratch"
                         date="(Aug 2024)"
