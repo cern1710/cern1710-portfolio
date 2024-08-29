@@ -16,7 +16,7 @@ const Projects = () => (
                         title="Inland Empire"
                         date="(Aug 2024 - Now)"
                     >
-                        Movie recommendation system based on Letterboxd user data
+                        Movie recommendation system based on scraped Letterboxd user data
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
