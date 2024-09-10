@@ -67,8 +67,8 @@ const Page = () => (
                     About me
                 </Heading>
                 <Paragraph>
-                    I am a final year student at Lancaster University,
-                    UK, in the School of Computing and Communications.
+                    I am a master's student in High Performance Computing with
+                    Data Science at the University of Edinburgh.
                     My undergraduate dissertation is on accelerating symbol-level
                     GRAND, supervised by Ioannis Chatzigeorgiou.
                     I also did a full exchange year at the Australian
