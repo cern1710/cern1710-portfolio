@@ -11,10 +11,18 @@ const Projects = () => (
             </Heading>
             <SimpleGrid columns={[1, 1, 1]} gap={6}>
                 <Section>
-                <ProjectGridItem
+                    <ProjectGridItem
+                        id="inland_empire"
+                        title="Inland Empire"
+                        date="(Aug 2024 - Now)"
+                    >
+                        Movie recommendation system based on scraped Letterboxd user data
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="transformers"
                         title="Transformers From Scratch"
-                        date="Aug 2024"
+                        date="(Aug 2024)"
                     >
                         Built the Transformer architecture from scratch, and extended it to the Vision Transformer (ViT) model
                     </ProjectGridItem>
