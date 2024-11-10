@@ -24,7 +24,7 @@ const Projects = () => (
                         title="Deep Learning for Predicting CT Slice Locations"
                         date="(Oct-Nov 2024)"
                     >
-                        Built a simple deep learning architectue from scratch for the "Relative location of CT slices on axial axis" dataset
+                        Built a simple deep learning architectue from scratch for a prediction task on the "Relative location of CT slices on axial axis" dataset
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
