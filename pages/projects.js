@@ -20,6 +20,14 @@ const Projects = () => (
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
+                        id="ct_slices"
+                        title="Deep Learning for Predicting CT Slice Locations"
+                        date="(Oct-Nov 2024)"
+                    >
+                        Built a simple deep learning architectue from scratch for the "Relative location of CT slices on axial axis" dataset
+                    </ProjectGridItem>
+                    <Divider my={4} />
+                    <ProjectGridItem
                         id="transformers"
                         title="Transformers From Scratch"
                         date="(Aug 2024)"
@@ -85,7 +93,7 @@ const Projects = () => (
                     <Divider my={4} />
                     <ProjectGridItem
                         id="domain_adaptation"
-                        title="Domain Adaptation for Deep Learning"
+                        title="Convolutional Neural Networks for Domain Adaptation"
                         date="(Apr 2023)"
                     >
                         Deep CNN model for domain adaptation on the DomainNet dataset in Pytorch
