@@ -70,7 +70,7 @@ const Page = () => (
                 </Heading>
                 <Paragraph>
                     I recently finished my master's in High Performance Computing (HPC) with
-                    Data Science from the University of
+                    Data Science at the University of
                     Edinburgh. <Link as={NextLink} href="/projects/deeppcr" passHref scroll={false}>
                         My master's dissertation
                     </Link> focused on replicating and extending DeepPCR,
