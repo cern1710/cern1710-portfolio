@@ -28,7 +28,7 @@ const Projects = () => (
                         title="AMD AI Sprint Hackathon"
                         date="(Jul 2025)"
                     >
-                        High performance Mixtral-8x7B serving: vLLM v1 optimisation on AMD MI300x
+                        Optimising Mixtral-8x7B inference performance on AMD MI300x with vLLM v1
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
@@ -37,7 +37,7 @@ const Projects = () => (
                         date="(Jan-Mar 2025)"
                     >
                         Vision Transformer (ViT) implementation with PyTorch Distributed
-                        for weather classification across multiple NVIDIA V100s
+                        for weather classification across multiple NVIDIA V100s, achieving up to 28x speedup
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
