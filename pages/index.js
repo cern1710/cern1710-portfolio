@@ -69,10 +69,10 @@ const Page = () => (
                     About me
                 </Heading>
                 <Paragraph>
-                    I recently finished my masters in High Performance Computing (HPC) with
+                    I recently finished my master's in High Performance Computing (HPC) with
                     Data Science from the University of
                     Edinburgh. <Link as={NextLink} href="/projects/deeppcr" passHref scroll={false}>
-                        My masters dissertation
+                        My master's dissertation
                     </Link> focused on replicating and extending DeepPCR,
                     an algorithm from a recent NeurIPS paper that applies parallel tridiagonal solvers to neural networks.
                     I hold a bachelor's degree with honours in Computer Science from Lancaster University,
