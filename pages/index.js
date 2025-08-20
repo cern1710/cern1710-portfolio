@@ -69,7 +69,7 @@ const Page = () => (
                     About me
                 </Heading>
                 <Paragraph>
-                    I recently graduated with a masters in High Performance Computing (HPC) with
+                    I recently finished my masters in High Performance Computing (HPC) with
                     Data Science from the University of
                     Edinburgh. <Link as={NextLink} href="/projects/deeppcr" passHref scroll={false}>
                         My masters dissertation
