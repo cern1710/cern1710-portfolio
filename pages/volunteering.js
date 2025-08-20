@@ -47,7 +47,8 @@ const Volunteering = () => (
                         title="Mario Learns Reinforcement Learning"
                         date="(Feb 2024)"
                     >
-                        An Introduction to RL given at LU CompSoc
+                        An Introduction to reinforcement learning given at LU CompSoc, covering
+                        Markov Decision Processes and Q-Learning
                     </ProjectGridItem>
                     <Divider my={4} />
                     <ProjectGridItem
