@@ -20,8 +20,9 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import ToggleButton from './toggle.js'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-    const active = path === href
+    const active = href === '/' ? path === href : path.startsWith(href)
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const activeColor = useColorModeValue("#202023", "white")
     return (
         <Link
             as={NextLink}
@@ -29,9 +30,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             scroll={false}
             p={2}
             bg={active ? 'glassTeal' : undefined}
-            color={active ? "#202023" : inactiveColor}
+            color={active ? activeColor : inactiveColor}
             target={target}
-            // borderRadius="14px"
             borderRadius="full" py={2} px={5}
             {...props}
         >
@@ -47,7 +47,7 @@ const MenuLink = forwardRef((props, ref) => (
 // Component to handle active state in mobile menu
 // This fixes the issue where the first box (About) is always greyed out
 const ActiveMenuItem = ({ href, path, children, ...props }) => {
-    const active = path === href
+    const active = href === '/' ? path === href : path.startsWith(href)
     const activeColor = useColorModeValue('#202023', 'inherit')
     const activeBg = useColorModeValue('glassTeal', 'glassTeal')
     return (
