@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { Title } from '../../components/project'
-import P from '../../components/paragraph'
+import Paragraph from '../../components/paragraph'
 import { BlockMath, InlineMath } from 'react-katex'
 import 'katex/dist/katex.min.css'
 
@@ -19,7 +19,7 @@ const Project = () => (
             <Heading as="h3" variant="section-title">
                 Abstract
             </Heading>
-            <P>
+            <Paragraph>
                 Training deep neural networks carries increasing
                 computational costs and environmental impact,
                 which are worsened by traditional
@@ -42,7 +42,7 @@ const Project = () => (
                 provides a clearer understanding of its performance boundaries,
                 and highlights potential directions for optimising its applicability
                 to deep, large-scale architectures.
-            </P>
+            </Paragraph>
         </Container>
     </Layout>
 )
