@@ -19,7 +19,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import ToggleButton from './toggle.js'
 
-const LinkItem = ({ href, path,target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
@@ -43,6 +43,26 @@ const LinkItem = ({ href, path,target, children, ...props }) => {
 const MenuLink = forwardRef((props, ref) => (
     <Link ref={ref} as={NextLink} {...props} />
 ))
+
+// Component to handle active state in mobile menu
+// This fixes the issue where the first box (About) is always greyed out
+const ActiveMenuItem = ({ href, path, children, ...props }) => {
+    const active = path === href
+    const activeColor = useColorModeValue('#202023', 'whiteAlpha.900')
+    const activeBg = useColorModeValue('glassTeal', 'glassTeal')
+    return (
+        <MenuItem
+            as={MenuLink}
+            href={href}
+            bg={active ? activeBg : undefined}
+            color={active ? activeColor : undefined}
+            fontWeight={active ? 'semibold' : 'normal'}
+            {...props}
+        >
+            {children}
+        </MenuItem>
+    )
+}
 
 const NavBar = props => {
     const { path } = props
@@ -85,13 +105,23 @@ const NavBar = props => {
                 <LinkItem href="/volunteering" path={path}>
                     Volunteering
                 </LinkItem>
-                <LinkItem href="/cv.pdf" path={path}>
+                <LinkItem href="/cv.pdf" path={path} target="_blank">
                     CV
                 </LinkItem>
-                <LinkItem href="https://github.com/cern1710" path={path}>
+                <LinkItem
+                    href="https://github.com/cern1710"
+                    path={path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <Box as={FaGithub} size="20px" />
                 </LinkItem>
-                <LinkItem href="https://www.linkedin.com/in/wcl-samuel/" path={path}>
+                <LinkItem
+                    href="https://www.linkedin.com/in/wcl-samuel/"
+                    path={path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <Box as={FaLinkedin} size="20px" />
                 </LinkItem>
             </Stack>
@@ -107,27 +137,31 @@ const NavBar = props => {
                             aria-label="Options"
                         />
                         <MenuList>
-                            <MenuItem as={MenuLink} href="/">
+                            <ActiveMenuItem href="/" path={path}>
                                 About
-                            </MenuItem>
-                            <MenuItem as={MenuLink} href="/projects">
+                            </ActiveMenuItem>
+                            <ActiveMenuItem href="/projects" path={path}>
                                 Projects
-                            </MenuItem>
-                            <MenuItem as={MenuLink} href="/volunteering">
+                            </ActiveMenuItem>
+                            <ActiveMenuItem href="/volunteering" path={path}>
                                 Volunteering
-                            </MenuItem>
-                            <MenuItem href="/cv.pdf" path={path} target="_blank">
+                            </ActiveMenuItem>
+                            <MenuItem as={MenuLink} href="/cv.pdf" target="_blank">
                                 CV
                             </MenuItem>
                             <MenuItem
                                 as={Link}
                                 href="https://github.com/cern1710"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 GitHub
                             </MenuItem>
                             <MenuItem
                                 as={Link}
                                 href="https://www.linkedin.com/in/wcl-samuel/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 LinkedIn
                             </MenuItem>
