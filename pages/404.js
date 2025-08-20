@@ -14,13 +14,13 @@ const NotFound = () => (
         <Heading as="h1" align="center">
             404
         </Heading>
-        <Text align="center">
-            Oops! We can&apos;t find what you are looking for.
+        <Text align="center" mt={5} fontStyle="italic">
+            The eternal dark has claimed this page...or perhaps it was never meant to be.
         </Text>
         <Divider my={6} />
         <Box my={6} align="center">
             <Button as={NextLink} href="/" colorScheme="teal">
-                Return to home
+                Escape to the corporeal plane
             </Button>
         </Box>
     </Container>
