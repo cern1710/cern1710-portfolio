@@ -6,18 +6,22 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { Title } from '../../components/project'
-import P from '../../components/paragraph'
+import Paragraph from '../../components/paragraph'
 
 const Project = () => (
     <Layout title="AMD AI Sprint Hackathon">
         <Container>
-            <Title>
+            <Title >
                 Building a 2nd-Place LLM Inference Solution and the
-                Submission that Never Happened  <Badge>Jul 2025</Badge>
+                Submission that Never Happened  <Badge colorScheme="teal" mr="2">Jul 2025</Badge>
             </Title>
-            <P>
+            <Paragraph>
                 Coming soon :)
-            </P>
+            </Paragraph>
+            <br />
+            <Paragraph>
+                Placeholder
+            </Paragraph>
         </Container>
     </Layout>
 )

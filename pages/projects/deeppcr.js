@@ -14,7 +14,7 @@ const Project = () => (
     <Layout title="MSc Dissertation">
         <Container>
             <Title>
-                MSc Dissertation: Parallel Tridiagonal Solvers for Neural Networks <Badge>Jun-Aug 2025</Badge>
+                MSc Dissertation: Parallel Tridiagonal Solvers for Neural Networks <Badge colorScheme="teal" mr="2">Jun-Aug 2025</Badge>
             </Title>
             <Heading as="h3" variant="section-title">
                 Abstract
