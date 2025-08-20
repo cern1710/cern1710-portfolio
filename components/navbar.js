@@ -48,7 +48,7 @@ const MenuLink = forwardRef((props, ref) => (
 // This fixes the issue where the first box (About) is always greyed out
 const ActiveMenuItem = ({ href, path, children, ...props }) => {
     const active = path === href
-    const activeColor = useColorModeValue('#202023', 'whiteAlpha.900')
+    const activeColor = useColorModeValue('#202023', 'inherit')
     const activeBg = useColorModeValue('glassTeal', 'glassTeal')
     return (
         <MenuItem
@@ -129,7 +129,7 @@ const NavBar = props => {
             <Box flex={1} align="right">
                 <ToggleButton />
                 <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-                    <Menu isLazy id="navbar-menu">
+                    <Menu isLazy id="navbar-menu" autoSelect={false}>
                         <MenuButton
                             as={IconButton}
                             icon={<HamburgerIcon />}
