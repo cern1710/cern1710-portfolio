@@ -2,6 +2,8 @@ import {
     Link,
     Container,
     Box,
+    Badge,
+    Text,
     Button,
     Heading,
     useColorModeValue
@@ -67,32 +69,33 @@ const Page = () => (
                     About me
                 </Heading>
                 <Paragraph>
-                    I am a master's student in High Performance Computing with
-                    Data Science at the University of Edinburgh.
-                    My undergraduate dissertation is on accelerating symbol-level
-                    GRAND, supervised by Ioannis Chatzigeorgiou.
-                    I also did a full exchange year at the Australian
-                    National University.
+                    I recently graduated with a masters in High Performance Computing (HPC) with
+                    Data Science from the University of
+                    Edinburgh. <Link as={NextLink} href="/projects/deeppcr" passHref scroll={false}>
+                        My masters dissertation
+                    </Link> focused on replicating and extending DeepPCR,
+                    an algorithm from a recent NeurIPS paper that applies parallel tridiagonal solvers to neural networks.
+                    I hold a bachelor's degree with honours in Computer Science from Lancaster University,
+                    with a full exchange year at the Australian National University.
                 </Paragraph>
                 <br />
                 <Paragraph>
-                    I am interested in high-performance computing (HPC)
-                    in general and, in particular, leveraging HPC in
-                    machine learning applications.
+                    I am interested in HPC
+                    in general and, in particular, leveraging accelerators for
+                    machine learning (ML) applications. Currently, I am focused
+                    on numerical methods for ML and generative models (normalising flows, flow-matching).
                 </Paragraph>
                 <br />
                 <Paragraph>
                     Outside of my academic pursuits, I enjoy reading
-                    and <Link href="https://letterboxd.com/cern1710">
+                    and <Link href="https://letterboxd.com/cern1710" isExternal>
                         watching films</Link>. I am also actively involved
-                    in the community, having recently given talks at
-                    <Link as={NextLink} href="/volunteering/hpc_kube"
-                    passHref scroll={false}> Yorkshire DevOps
-                        </Link> and
-                    <Link as={NextLink}
+                    in the community, having given talks at <Link as={NextLink} href="/volunteering/hpc_kube"
+                    passHref scroll={false}>Yorkshire DevOps
+                        </Link> and <Link as={NextLink}
                         href="/volunteering/intro_parallel"
                         passHref
-                        scroll={false}> BSides Leeds</Link>.
+                        scroll={false}>BSides Leeds</Link>.
                 </Paragraph>
 
                 <Box align="center" my={6}>
@@ -106,6 +109,28 @@ const Page = () => (
                     >
                         My portfolio
                     </Button>
+                </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Updates
+                </Heading>
+                <Box>
+                    <Text>
+                        <Badge colorScheme="teal" mr={2}>Aug 2025</Badge>
+                        Article: <Link as={NextLink} href="/projects/ai_sprint_paris_2025" passHref scroll={false}>
+                            The Unsubmitted 2nd-Place LLM Inference Solution
+                        </Link>
+                    </Text>
+                </Box>
+                <Box>
+                    <Text>
+                        <Badge colorScheme="teal" mr={2}>Aug 2025</Badge>
+                        I have completed my MSc dissertation! <Link as={NextLink} href="/projects/deeppcr" passHref scroll={false}>
+                            [View abstract]
+                        </Link>
+                    </Text>
                 </Box>
             </Section>
 
