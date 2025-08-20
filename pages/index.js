@@ -35,7 +35,7 @@ const Page = () => (
                     <Heading as="h2" variant="page-title">
                         Samuel Wu <span style={{ fontWeight: 'normal', fontSize: '0.8em' }}>(he/they)</span>
                     </Heading>
-                    <div> HPC | Machine Learning | Public Speaker | Avid film buff</div>
+                    <div> HPC | Machine Learning | Avid Film Buff | Public Speaker</div>
                 </Box>
 
                 <Box
