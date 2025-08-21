@@ -119,7 +119,7 @@ const Page = () => (
                 <Box>
                     <Text>
                         <Badge colorScheme="teal" mr={2}>Aug 2025</Badge>
-                        Article: <Link as={NextLink} href="/blog/ai_sprint_paris_2025" passHref scroll={false}>
+                        Article: <Link as={NextLink} href="/blog/unsubmitted_llm" passHref scroll={false}>
                             The Unsubmitted 2nd-Place LLM Inference Solution
                         </Link>
                     </Text>

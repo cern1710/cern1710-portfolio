@@ -9,7 +9,7 @@ import { Title } from '../../components/project'
 import Paragraph from '../../components/paragraph'
 
 const Blog = () => (
-    <Layout title="AMD AI Sprint Hackathon">
+    <Layout title="The Unsubmitted 2nd-Place LLM Inference Solution">
         <Container>
             <Title category='blog'>
                 Building a 2nd-Place LLM Inference Solution and the

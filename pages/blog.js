@@ -19,7 +19,7 @@ const Blog = () => (
                     </BlogGridItem>
                     <Divider my={4} /> */}
                     <BlogGridItem
-                        id="ai_sprint_paris_2025"
+                        id="unsubmitted_llm"
                         title="The Unsubmitted 2nd-Place LLM Inference Solution"
                         date="(Aug 2025)"
                     >
