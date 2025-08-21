@@ -16,7 +16,7 @@ const Project = () => (
                 AMD AI Sprint Hackathon <Badge colorScheme="teal" mr="2">Jul 2025</Badge>
             </Title>
             <Paragraph>
-                Related article: <Link as={NextLink} href="/blog/ai_sprint_paris_2025" passHref scroll={false}>
+                Related article: <Link as={NextLink} href="/blog/unsubmitted_llm" passHref scroll={false}>
                     The Unsubmitted 2nd-Place LLM Inference Solution
                 </Link>
             </Paragraph>
