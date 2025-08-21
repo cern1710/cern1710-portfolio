@@ -55,6 +55,18 @@ export const ProjectGridItem = ({ children, category='projects', id, title, thum
     </Box>
 )
 
+export const BlogGridItem = ({ children, id, title, thumbnail, date }) => (
+    <ProjectGridItem
+        category='blog'
+        id={id}
+        title={title}
+        thumbnail={thumbnail}
+        date={date}
+    >
+        {children}
+    </ProjectGridItem>
+)
+
 export const GridItemStyle = () => (
     <Global
         styles={`
